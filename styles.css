@@ -1,0 +1,21 @@
+*
+{
+    box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+body
+{
+font-family: Outfit;
+
+}
+.recipe-container
+{
+
+background-color: hsl(0, 0%, 100%);
+}
+.recipe-container .omelette-img
+{
+width: 100%;
+display: block;
+}
