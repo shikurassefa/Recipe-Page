@@ -1,21 +1,148 @@
-*
-{
-    box-sizing: border-box;
-padding: 0;
-margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-body
-{
-font-family: Outfit;
+:root {
+  --text-color: hsl(30, 10%, 34%);
+}
+body {
+  font-family: "Young Serif";
+}
+main {
+  background-color: hsl(0, 0%, 100%);
+}
+header .omelette-img {
+  width: 100%;
+  display: block;
+}
+.recipe-container {
+  padding: 2rem;
+}
+.recipe-header {
+  margin: 1.5rem 0;
+}
+.recipe-header h1 {
+  font-weight: 400;
+}
+.recipe-header p {
+  color: var(--text-color);
+  font-family: Outfit;
+  line-height: 1.7;
+  padding-top: 0.8rem;
+  width: 90%;
+}
+.prepartion {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
 
+.prepartion h4 {
+  font-family: Outfit;
+  margin: 1rem 0;
+  font-weight: 800;
+  color: hsl(14, 85%, 41%);
 }
-.recipe-container
+.prepartion ul {
+  padding: 1.5rem;
+}
+.prepartion ul li {
+  font-family: Outfit;
+  padding: 0.9rem 0;
+}
+.ingredients {
+  margin: 1.5rem 0;
+}
+.ingredients h4 {
+  color: hsl(330, 88%, 35%);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.ingredients ul {
+  padding: 1rem 2rem;
+}
+.ingredients ul li {
+  padding: 0.5rem;
+  color: var(--text-color);
+  font-family: Outfit;
+}
+.instructions 
 {
-
-background-color: hsl(0, 0%, 100%);
+margin-top: 1.4rem;
 }
-.recipe-container .omelette-img
+.instructions h4 
 {
-width: 100%;
-display: block;
+    color: hsl(330, 88%, 35%);
+    font-size: 1.5rem;
+    font-weight: 400;
 }
+.instructions ul 
+{
+    padding: 1.5rem;
+}
+.instructions ul li 
+{
+    list-style-type: number;
+    font-family: Outfit;
+    padding: .4rem;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+.instructions ul li::marker
+{
+   color:  hsl(330, 88%, 35%);
+   font-weight: bold;
+}
+.nutrition 
+{
+    margin-top: 1.4rem;
+}
+.nutrition h4 
+{
+    color: hsl(330, 88%, 35%);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.nutrition  p
+{
+    margin-top: 1rem;
+    font-family: Outfit;
+}
+.nutrition table
+{
+    margin-top: 1.4rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  table tr td:nth-child(2)
+  {
+    color: hsl(330, 88%, 35%);
+    font-weight: bold;
+  }
+  @media only screen and (min-width: 500px) {
+    body {
+      background-color:  hsl(330, 100%, 98%);
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    main
+    {
+        background-color: white;
+        width: 500px;
+border-radius: .4rem;
+margin: 1rem;
+padding: 1rem;
+    }
+    header .omelette-img {
+      border-radius: .4rem;
+      }
+  }
