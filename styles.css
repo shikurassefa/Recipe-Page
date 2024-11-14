@@ -8,13 +8,29 @@
 }
 body {
   font-family: "Young Serif";
+  background-color: hsl(330, 100%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+header 
+{
+  width: 500px;
+}
+
 main {
-  background-color: hsl(0, 0%, 100%);
+  background-color: white;
+  width: 500px;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  padding: 1rem;
 }
 header .omelette-img {
   width: 100%;
   display: block;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
 }
 .recipe-container {
   padding: 2rem;
@@ -67,82 +83,61 @@ header .omelette-img {
   color: var(--text-color);
   font-family: Outfit;
 }
-.instructions 
-{
-margin-top: 1.4rem;
+.instructions {
+  margin-top: 1.4rem;
 }
-.instructions h4 
-{
-    color: hsl(330, 88%, 35%);
-    font-size: 1.5rem;
-    font-weight: 400;
+.instructions h4 {
+  color: hsl(330, 88%, 35%);
+  font-size: 1.5rem;
+  font-weight: 400;
 }
-.instructions ul 
-{
-    padding: 1.5rem;
+.instructions ul {
+  padding: 1.5rem;
 }
-.instructions ul li 
-{
-    list-style-type: number;
-    font-family: Outfit;
-    padding: .4rem;
-    line-height: 1.5;
-    color: var(--text-color);
+.instructions ul li {
+  list-style-type: number;
+  font-family: Outfit;
+  padding: 0.4rem;
+  line-height: 1.5;
+  color: var(--text-color);
 }
-.instructions ul li::marker
-{
-   color:  hsl(330, 88%, 35%);
-   font-weight: bold;
+.instructions ul li::marker {
+  color: hsl(330, 88%, 35%);
+  font-weight: bold;
 }
-.nutrition 
-{
-    margin-top: 1.4rem;
+.nutrition {
+  margin-top: 1.4rem;
 }
-.nutrition h4 
-{
-    color: hsl(330, 88%, 35%);
-    font-size: 1.5rem;
-    font-weight: 400;
+.nutrition h4 {
+  color: hsl(330, 88%, 35%);
+  font-size: 1.5rem;
+  font-weight: 400;
 }
-.nutrition  p
-{
-    margin-top: 1rem;
-    font-family: Outfit;
+.nutrition p {
+  margin-top: 1rem;
+  font-family: Outfit;
 }
-.nutrition table
-{
-    margin-top: 1.4rem;
-    width: 100%;
-    border-collapse: collapse;
+.nutrition table {
+  margin-top: 1.4rem;
+  width: 100%;
+  border-collapse: collapse;
 }
 table td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    
-  }
-  table tr td:nth-child(2)
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+table tr td:nth-child(2) {
+  color: hsl(330, 88%, 35%);
+  font-weight: bold;
+}
+@media only screen and (max-width: 500px) {
+  body 
   {
-    color: hsl(330, 88%, 35%);
-    font-weight: bold;
+    padding: 2rem 0;
   }
-  @media only screen and (min-width: 500px) {
-    body {
-      background-color:  hsl(330, 100%, 98%);
-      display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    }
-    main
-    {
-        background-color: white;
-        width: 500px;
-border-radius: .4rem;
-margin: 1rem;
-padding: 1rem;
-    }
-    header .omelette-img {
-      border-radius: .4rem;
-      }
+  header,main
+  {
+    max-width: 450px;
   }
+}
